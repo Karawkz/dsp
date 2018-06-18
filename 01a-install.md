@@ -59,7 +59,7 @@ In the Terminal:
 
 `python3 --version`
 
->> git version 2.15.1
+>> Python 3.6.3; git version 2.15.1
 
  
 
