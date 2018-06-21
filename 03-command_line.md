@@ -66,7 +66,6 @@ ers inside it
 'Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > > 'ls -q', 'ls -r', 'ls -S', 'ls -A', 'ls -h'
-I don't find this particularly exhilarating but okay...
 
 ---
 
@@ -76,5 +75,5 @@ What does `xargs` do? Give an example of how to use it.
 
 > > It reads data from stdin and executes a command that is supplied to it as an argument based on the input read.
 Echos stdin.
-xargs find -name
+xargs
 oHai, world!
