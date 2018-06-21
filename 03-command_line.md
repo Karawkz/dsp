@@ -20,8 +20,22 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > lol --- hi  
-why
+> > 'ls' - looks at the folder you are in, and then "lists" the files and folders inside it  
+'pwd' - outputs the name of the directory you are currently in, called the working directory  
+'cd' - changes the working directory  
+'cd ..' - to move up one directory; cd ../etc - to move back and change  
+'mkdir' - make directory  
+'touch try.txt' - creates a new file inside the working directory  
+'cp' - copies; note that cannot copy into current directory; cp * satire/; cp m*.txt scifi/ - all files starting with 'm'    
+'mv' - moves to directory; can rename  
+'rm' - removes files
+'rm -r' - removes directory
+'cat' - view contents of a text file
+'sort' - sorts in alphabetical order
+'uniq' - only words
+'grep' - "global regular expression print"; searches lines matching a pattern
+'grep -i' - case sensitive
+'sed' - stream editor; find and replace
 
 ---
 
@@ -36,15 +50,23 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls' - looks at the folder you are in, and then "lists" the files and fold\
+ers inside it  
+'ls -a' - also lists the files and directories starting with a dot  
+'ls -l' - lists all contents of a directory in long format  
+'ls -t' - orders files and directories by the time they were last modified
+'ls -lh' - lists long format with readable file size
+'ls -lah' - lists long format including hidden files with readable file size
+'ls -Glp' - lists in long format enabling colorised output with '/' after each filename if the file is a directory
+'man ls' - where to find out everything
 
 ---
-
 ### Q3.  More List Files in Unix  
 
-Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
+'Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls -q', 'ls -r', 'ls -S', 'ls -A', 'ls -h'
+I don't find this particularly exhilarating but okay...
 
 ---
 
@@ -52,7 +74,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > It reads data from stdin and executes a command that is supplied to it as an argument based on the input read.
+Search all .txt files in the current directories / subdirectories.
+xargs find -name
+oHai, world!
