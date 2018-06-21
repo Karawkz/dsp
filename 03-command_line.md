@@ -75,6 +75,6 @@ I don't find this particularly exhilarating but okay...
 What does `xargs` do? Give an example of how to use it.
 
 > > It reads data from stdin and executes a command that is supplied to it as an argument based on the input read.
-Search all .txt files in the current directories / subdirectories.
+Echos stdin.
 xargs find -name
 oHai, world!
