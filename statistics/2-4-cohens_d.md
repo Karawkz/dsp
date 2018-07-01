@@ -31,7 +31,6 @@
     firsts = live[live.birthord == 1]
     others = live[live.birthord != 1]
     
-    #### Statistics
     firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean() = **(7.201094430437772, 7.325855614973262)**
     firsts['totalwgt_lb'].std(),others['totalwgt_lb'].std() = **(1.4205728777207374, 1.3941954762143138)**
     firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var() = **(2.0180273009157768, 1.9437810258964572)**
