@@ -9,6 +9,7 @@
     live = preg[preg.outcome == 1]
     firsts = live[live.birthord == 1]
     others = live[live.birthord != 1]
+---
     
     firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean()
 (7.201094430437772, 7.325855614973262)
