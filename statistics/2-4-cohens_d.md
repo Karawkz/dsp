@@ -4,27 +4,6 @@
 
     import numpy as np
     import nsfg
-    
-    def CohenEffectSize(group1, group2):
-    """Computes Cohen's effect size for two groups.
-    
-    group1: Series or DataFrame
-    group2: Series or DataFrame
-    
-    returns: float if the arguments are Series;
-             Series if the arguments are DataFrames
-    """
-    diff = group1.mean() - group2.mean()
-
-    var1 = group1.var()
-    var2 = group2.var()
-    n1, n2 = len(group1), len(group2)
-
-    pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)
-    d = diff / np.sqrt(pooled_var)
-    return d
-
-    # First Babies vs. Other Babies
 
     preg = nsfg.ReadFemPreg()
     live = preg[preg.outcome == 1]
@@ -39,6 +18,27 @@ std deviation of weight of first babies vs. other babies(1.4205728777207374, 1.3
 
     firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var()
 variance of weight of first babies vs. other babies (2.0180273009157768, 1.9437810258964572)
+
+Cohen's D Formula
+
+    def CohenEffectSize(group1, group2):
+    """Computes Cohen's effect size for two groups.
+
+    group1: Series or DataFrame
+    group2: Series or DataFrame
+
+    returns: float if the arguments are Series;
+             Series if the arguments are DataFrames
+    """
+    diff = group1.mean() - group2.mean()
+
+    var1 = group1.var()
+    var2 = group2.var()
+    n1, n2 = len(group1), len(group2)
+
+    pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)
+    d = diff / np.sqrt(pooled_var)
+    return d
 
     CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb'])
 -0.088672927072602006
