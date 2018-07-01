@@ -46,5 +46,6 @@ Cohen's D Formula
     CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb'])
 -0.088672927072602006
 
-The mean weight of first babies is lower than that of other babies. The Cohen's D value for first babies and other babies respectively results in a negative value, which supports this. The value or size of the effect is also small (0.0887 standard deviations). The Cohen's D value (0.0289) for pregnancy length is positive, which means that the mean pregnancy length for first babies is greater than that of other babies. However, the effect of pregnancy length compared to that of babies' weight is even smaller on first babies and other babies because the absolute Cohen's D value for pregnancy length is lower than that of babies' weight.
+The mean weight of first babies is lower than that of other babies. The Cohen's D value is negative, which supports this. The value or size of the effect is also small (0.0887 standard deviations). 
+The Cohen's D value of 0.0289 (0.0289 standard deviations) for pregnancy length is positive, which means that the mean pregnancy length for first babies is greater than that of other babies. However, the effect of pregnancy length compared to that of babies' weight is even smaller on first babies and other babies because the absolute Cohen's D value of pregnancy length is lower than that of babies' weight.
 
