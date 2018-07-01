@@ -1,7 +1,10 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->> Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others. Compute Cohen’s d to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
+### Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others. Compute Cohen’s d to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
 
+    import numpy as np
+    import nsfg
+    
     def CohenEffectSize(group1, group2):
     """Computes Cohen's effect size for two groups.
     
@@ -21,9 +24,6 @@
     d = diff / np.sqrt(pooled_var)
     return d
 
-    import numpy as np
-    import nsfg
-
     # First Babies vs. Other Babies
 
     preg = nsfg.ReadFemPreg()
@@ -31,11 +31,12 @@
     firsts = live[live.birthord == 1]
     others = live[live.birthord != 1]
     
-    firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean() = (7.201094430437772, 7.325855614973262)
-    firsts['totalwgt_lb'].std(),others['totalwgt_lb'].std() = (1.4205728777207374, 1.3941954762143138)
-    firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var() = (2.0180273009157768, 1.9437810258964572)
+    #### Statistics
+    firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean() = **(7.201094430437772, 7.325855614973262)**
+    firsts['totalwgt_lb'].std(),others['totalwgt_lb'].std() = **(1.4205728777207374, 1.3941954762143138)**
+    firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var() = **(2.0180273009157768, 1.9437810258964572)**
 
-    CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb']) = -0.088672927072602006
+    CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb']) = **-0.088672927072602006**
 
     The mean weight of first babies is lower than that of other babies. 
     The Cohen's D value for first babies and other babies respectively results in a negative value, which supports this. 
