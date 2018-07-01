@@ -31,15 +31,19 @@
     firsts = live[live.birthord == 1]
     others = live[live.birthord != 1]
     
-    firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean() = **(7.201094430437772, 7.325855614973262)**
-    firsts['totalwgt_lb'].std(),others['totalwgt_lb'].std() = **(1.4205728777207374, 1.3941954762143138)**
-    firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var() = **(2.0180273009157768, 1.9437810258964572)**
+    firsts['totalwgt_lb'].mean(),others['totalwgt_lb'].mean()
+(7.201094430437772, 7.325855614973262)
+    firsts['totalwgt_lb'].std(),others['totalwgt_lb'].std() 
+(1.4205728777207374, 1.3941954762143138)
+    firsts['totalwgt_lb'].var(),others['totalwgt_lb'].var()
+(2.0180273009157768, 1.9437810258964572)
 
-    CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb']) = **-0.088672927072602006**
+    CohenEffectSize(firsts['totalwgt_lb'],others['totalwgt_lb'])
+-0.088672927072602006
 
-    The mean weight of first babies is lower than that of other babies. 
-    The Cohen's D value for first babies and other babies respectively results in a negative value, which supports this. 
-    The value or size of the effect is also small (0.0887 standard deviations).
-    The Cohen's D value (0.0289) for pregnancy length is positive, which means that the mean pregnancy length for first babies is greater than that of other babies.
-    However, the effect of pregnancy length compared to that of babies' weight is even smaller on first babies and other babies because the absolute Cohen's D value for pregnancy length is lower than that of babies' weight.
+### The mean weight of first babies is lower than that of other babies. 
+The Cohen's D value for first babies and other babies respectively results in a negative value, which supports this. 
+The value or size of the effect is also small (0.0887 standard deviations).
+The Cohen's D value (0.0289) for pregnancy length is positive, which means that the mean pregnancy length for first babies is greater than that of other babies.
+However, the effect of pregnancy length compared to that of babies' weight is even smaller on first babies and other babies because the absolute Cohen's D value for pregnancy length is lower than that of babies' weight.
 
