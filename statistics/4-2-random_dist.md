@@ -23,3 +23,5 @@ CDF
     thinkplot.Config(xlabel='Vals', ylabel='CDF')
 
 ![Image of Random CDF](https://github.com/Karawkz/dsp/blob/master/statistics/cdfrandom.png?raw=true)
+
+Yes, it is approximately a uniform distribution given that the CDF displays an approximately straight line that is increasing.
