@@ -44,6 +44,6 @@ Plotted Distributions
     thinkplot.Pmfs([pmf, bias])
     thinkplot.Config(xlabel='No. of Children Under 18 Per Hh', ylabel='PMF')
 
-
+[[https://github.com/Karawkz/dsp/blob/master/biasplot.png?raw=true]]
 
 
