@@ -100,7 +100,7 @@ How do frequentist and Bayesian statistics compare?
 * Sampling as well as model uncertainty.
 
 #### Frequentist:
-* Never relies on prior probabilities.
+* Never relies on posterior and prior probabilities.
 * Only sampling.
 
 ---
